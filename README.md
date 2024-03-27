@@ -65,6 +65,9 @@ See 'snap info docker' for additional versions.
 
 6. Остановите проект. В качестве ответа приложите скриншот sql-запроса.
 
+   <img width="538" alt="image" src="https://github.com/osipovtema/Practical-application-of-Docker/assets/33830995/dd1ca103-3c8e-4008-9fbc-9b44c4030cfa">
+
+
 ## Задача 4
 1. Запустите в Yandex Cloud ВМ (вам хватит 2 Гб Ram).
 2. Подключитесь к Вм по ssh и установите docker.
