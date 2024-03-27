@@ -118,8 +118,11 @@ SELECT * from requests LIMIT 10;
 
 команды:
 docker pull hashicorp/terraform:latest
+
 dive hashicorp/terraform:latest
+
 docker save hashicorp/terraform:latest > terraform.tar
+
 tar -xvf terraform.tar
 
 
