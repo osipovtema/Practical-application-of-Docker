@@ -128,7 +128,9 @@ tar -xvf terraform.tar
 Предоставьте скриншоты  действий .
 
 docker run --rm -it hashicorp/terraform:latest sh
+
 find / -name terraform
+
 docker cp <ID_контейнера>:/usr/local/bin/terraform .
 
 
