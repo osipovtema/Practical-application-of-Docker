@@ -85,6 +85,25 @@ See 'snap info docker' for additional versions.
 5. (Необязательная часть) Дополнительно настройте remote ssh context к вашему серверу. Отобразите список контекстов и результат удаленного выполнения ```docker ps -a```
 6. В качестве ответа повторите  sql-запрос и приложите скриншот с данного сервера, bash-скрипт и ссылку на fork-репозиторий.
 
+Технические проблемы с Yandex Cloud. Описал действия которые нужно выполнить. Проверил локально.
+
+Установка Docker на ВМ
+sudo apt update
+sudo apt install docker.io
+
+   bash-скрипт deploy_project.sh
+#!/bin/bash
+git clone https://github.com/your_username/your_forked_repository.git /opt/your_project
+cd /opt/project
+docker-compose up -d
+
+SQL-запросы:
+show databases;
+use my_base; 
+show tables;
+SELECT * from requests LIMIT 10;
+
+
 ## Задача 5 (*)
 1. Напишите и задеплойте на вашу облачную ВМ bash скрипт, который произведет резервное копирование БД mysql в директорию "/opt/backup" с помощью запуска в сети "backend" контейнера из образа ```schnitzler/mysqldump``` при помощи ```docker run ...``` команды. Подсказка: "документация образа."
 2. Протестируйте ручной запуск
@@ -95,9 +114,23 @@ See 'snap info docker' for additional versions.
 Скачайте docker образ ```hashicorp/terraform:latest``` и скопируйте бинарный файл ```/bin/terraform``` на свою локальную машину, используя dive и docker save.
 Предоставьте скриншоты  действий .
 
+<img width="563" alt="image" src="https://github.com/osipovtema/Practical-application-of-Docker/assets/33830995/a22089b5-4049-46ec-9aca-2c10c56d8476">
+
+команды:
+docker pull hashicorp/terraform:latest
+dive hashicorp/terraform:latest
+docker save hashicorp/terraform:latest > terraform.tar
+tar -xvf terraform.tar
+
+
 ## Задача 6.1
 Добейтесь аналогичного результата, используя docker cp.  
 Предоставьте скриншоты  действий .
+
+docker run --rm -it hashicorp/terraform:latest sh
+find / -name terraform
+docker cp <ID_контейнера>:/usr/local/bin/terraform .
+
 
 ## Задача 6.2 (**)
 Предложите способ извлечь файл из контейнера, используя только команду docker build и любой Dockerfile.  
