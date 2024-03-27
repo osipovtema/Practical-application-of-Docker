@@ -67,6 +67,14 @@ See 'snap info docker' for additional versions.
 
    <img width="538" alt="image" src="https://github.com/osipovtema/Practical-application-of-Docker/assets/33830995/dd1ca103-3c8e-4008-9fbc-9b44c4030cfa">
 
+<img width="538" alt="image" src="https://github.com/osipovtema/Practical-application-of-Docker/assets/33830995/984d404b-1467-4cf3-a56d-d0d1974856ba">
+
+<img width="293" alt="image" src="https://github.com/osipovtema/Practical-application-of-Docker/assets/33830995/1eb4ef91-b73e-4def-9fcf-f2c50c59a5d1">
+
+<img width="563" alt="image" src="https://github.com/osipovtema/Practical-application-of-Docker/assets/33830995/67b7858d-08d2-40a2-aab7-fc46dac478d6">
+
+
+
 
 ## Задача 4
 1. Запустите в Yandex Cloud ВМ (вам хватит 2 Гб Ram).
